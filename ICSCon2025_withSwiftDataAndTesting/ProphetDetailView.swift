@@ -21,14 +21,10 @@ struct ProphetDetailView: View {
                     }
                 }
                 Group {
-                    Text("Born: \(formatDate(prophet.born))")
-                    if let died = prophet.died {
-                        Text("Died: \(formatDate(died))")
-                    }
-                    if let apostleCalled = prophet.apostleCalled {
-                        Text("Apostle Called: \(formatDate(apostleCalled))")
-                    }
-                    Text("Prophet Called: \(formatDate(prophet.prophetCalled))")
+                    dateField(text: "Born", date: prophet.born)
+                    dateField(text: "Died", date: prophet.died)
+                    dateField(text: "Call date to the Quorum of the Twelve Apostles", date: prophet.apostleCalled)
+                    dateField(text: "Call date as President of the Church of Jesus Christ of Latter-day Saints", date: prophet.prophetCalled)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 if !prophet.notableQuotes.isEmpty {
@@ -51,6 +47,17 @@ struct ProphetDetailView: View {
         .navigationTitle(prophet.name)
         .navigationBarTitleDisplayMode(.inline)
     }
+    
+    @ViewBuilder
+    private func dateField(text: String, date: Date?) -> some View {
+        if let date {
+            HStack(alignment: .top) {
+                Text(text)
+                Spacer()
+                Text(date, style: .date)
+            }
+        }
+    }
 
     private func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
@@ -60,5 +67,5 @@ struct ProphetDetailView: View {
 }
 
 #Preview {
-//    ProphetDetailView(prophet: PreviewSampleData.prophet)
+    ProphetDetailView(prophet: PreviewSampleData.prophet)
 }
