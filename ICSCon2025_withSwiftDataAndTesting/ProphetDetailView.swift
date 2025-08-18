@@ -1,3 +1,4 @@
+import Kingfisher
 import SwiftUI
 
 struct ProphetDetailView: View {
@@ -6,19 +7,14 @@ struct ProphetDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                if let imageUrl = prophet.imageUrl {
-                    HStack {
-                        Spacer()
-                        AsyncImage(url: imageUrl) { image in
-                            image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(maxWidth: 200, maxHeight: 200)
-                        } placeholder: {
-                            ProgressView()
-                        }
-                        Spacer()
-                    }
+                HStack {
+                    Spacer()
+                    KFImage(prophet.imageUrl)
+                        .resizable()
+                        .roundCorner(radius: .widthFraction(0.1))
+                        .scaledToFit()
+                        .frame(maxWidth: 200, maxHeight: 200)
+                    Spacer()
                 }
                 Group {
                     dateField(text: "Born", date: prophet.born)

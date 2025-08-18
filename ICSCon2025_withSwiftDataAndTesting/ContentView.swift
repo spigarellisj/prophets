@@ -5,6 +5,7 @@
 //  Created by Steve Spigarelli on 8/12/25.
 //
 
+import Kingfisher
 import SwiftUI
 import SwiftData
 
@@ -18,16 +19,11 @@ struct ContentView: View {
                     ProphetDetailView(prophet: prophet)
                 } label: {
                     HStack {
-                        if let imageURL = prophet.imageUrl {
-                            AsyncImage(url: imageURL) { image in
-                                image
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(maxWidth: 50, maxHeight: 50)
-                            } placeholder: {
-                                ProgressView()
-                            }
-                        }
+                        KFImage(prophet.imageUrl)
+                            .resizable()
+                            .roundCorner(radius: .widthFraction(0.1))
+                            .scaledToFit()
+                            .frame(maxWidth: 50, maxHeight: 50)
                         Text(prophet.name)
                     }
                 }
