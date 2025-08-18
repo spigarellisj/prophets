@@ -9,53 +9,35 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query(sort: \Item.timestamp, order: .reverse) private var items: [Item]
+    @Query(sort: \Prophet.prophetCalled, order: .reverse) private var prophets: [Prophet]
 
     var body: some View {
         NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+            List(prophets) { prophet in
+                NavigationLink {
+                    ProphetDetailView(prophet: prophet)
+                } label: {
+                    HStack {
+                        if let imageURL = prophet.imageUrl {
+                            AsyncImage(url: imageURL) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(maxWidth: 50, maxHeight: 50)
+                            } placeholder: {
+                                ProgressView()
+                            }
+                        }
+                        Text(prophet.name)
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
+            .navigationTitle("Latter-day Prophets")
 #if os(macOS)
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
 #endif
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
         } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+            Text("Select a prophet")
         }
     }
 }
