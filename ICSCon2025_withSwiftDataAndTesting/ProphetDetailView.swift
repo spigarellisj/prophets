@@ -45,7 +45,9 @@ struct ProphetDetailView: View {
             .padding()
         }
         .navigationTitle(prophet.name)
+#if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
+#endif
     }
     
     @ViewBuilder
