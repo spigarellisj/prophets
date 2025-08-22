@@ -1,13 +1,13 @@
 //
-//  ICSCon2025_withSwiftDataAndTestingUITestsLaunchTests.swift
-//  ICSCon2025_withSwiftDataAndTestingUITests
+//  ProphetsUITestsLaunchTests.swift
+//  ProphetsUITests
 //
 //  Created by Steve Spigarelli on 8/12/25.
 //
 
 import XCTest
 
-final class ICSCon2025_withSwiftDataAndTestingUITestsLaunchTests: XCTestCase {
+final class ProphetsUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

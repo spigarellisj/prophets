@@ -1,6 +1,6 @@
 //
 //  Prophet.swift
-//  ICSCon2025_withSwiftDataAndTesting
+//  Prophets
 //
 //  Created by Steve Spigarelli on 8/12/25.
 //

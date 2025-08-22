@@ -1,13 +1,13 @@
 //
-//  ICSCon2025_withSwiftDataAndTestingUITests.swift
-//  ICSCon2025_withSwiftDataAndTestingUITests
+//  ProphetsUITests.swift
+//  ProphetsUITests
 //
 //  Created by Steve Spigarelli on 8/12/25.
 //
 
 import XCTest
 
-final class ICSCon2025_withSwiftDataAndTestingUITests: XCTestCase {
+final class ProphetsUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

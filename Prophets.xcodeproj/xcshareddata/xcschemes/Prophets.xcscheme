@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DBC401D2E4BE85B008E24F5"
-               BuildableName = "ICSCon2025_withSwiftDataAndTesting.app"
-               BlueprintName = "ICSCon2025_withSwiftDataAndTesting"
-               ReferencedContainer = "container:ICSCon2025_withSwiftDataAndTesting.xcodeproj">
+               BuildableName = "Prophets.app"
+               BlueprintName = "Prophets"
+               ReferencedContainer = "container:Prophets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DBC402D2E4BE85C008E24F5"
-               BuildableName = "ICSCon2025_withSwiftDataAndTestingTests.xctest"
-               BlueprintName = "ICSCon2025_withSwiftDataAndTestingTests"
-               ReferencedContainer = "container:ICSCon2025_withSwiftDataAndTesting.xcodeproj">
+               BuildableName = "ProphetsTests.xctest"
+               BlueprintName = "ProphetsTests"
+               ReferencedContainer = "container:Prophets.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6DBC40372E4BE85C008E24F5"
-               BuildableName = "ICSCon2025_withSwiftDataAndTestingUITests.xctest"
-               BlueprintName = "ICSCon2025_withSwiftDataAndTestingUITests"
-               ReferencedContainer = "container:ICSCon2025_withSwiftDataAndTesting.xcodeproj">
+               BuildableName = "ProphetsUITests.xctest"
+               BlueprintName = "ProphetsUITests"
+               ReferencedContainer = "container:Prophets.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DBC401D2E4BE85B008E24F5"
-            BuildableName = "ICSCon2025_withSwiftDataAndTesting.app"
-            BlueprintName = "ICSCon2025_withSwiftDataAndTesting"
-            ReferencedContainer = "container:ICSCon2025_withSwiftDataAndTesting.xcodeproj">
+            BuildableName = "Prophets.app"
+            BlueprintName = "Prophets"
+            ReferencedContainer = "container:Prophets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6DBC401D2E4BE85B008E24F5"
-            BuildableName = "ICSCon2025_withSwiftDataAndTesting.app"
-            BlueprintName = "ICSCon2025_withSwiftDataAndTesting"
-            ReferencedContainer = "container:ICSCon2025_withSwiftDataAndTesting.xcodeproj">
+            BuildableName = "Prophets.app"
+            BlueprintName = "Prophets"
+            ReferencedContainer = "container:Prophets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
