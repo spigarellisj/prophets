@@ -11,7 +11,6 @@ struct ProphetDetailView: View {
                     Spacer()
                     KFImage(prophet.imageUrl)
                         .resizable()
-                        .roundCorner(radius: .widthFraction(0.1))
                         .scaledToFit()
                         .frame(maxWidth: 200, maxHeight: 200)
                     Spacer()

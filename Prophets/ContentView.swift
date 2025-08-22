@@ -33,7 +33,6 @@ struct ContentView: View {
                     HStack {
                         KFImage(prophet.imageUrl)
                             .resizable()
-                            .roundCorner(radius: .widthFraction(0.1))
                             .scaledToFit()
                             .frame(maxWidth: 50, maxHeight: 50)
                         Text(prophet.name)
