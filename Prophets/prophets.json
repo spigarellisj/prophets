@@ -210,7 +210,7 @@
   {
     "name": "Russell M. Nelson",
   "born": "1924-09-09",
-  "died": null,
+  "died": "2025-09-27",
   "apostleCalled": "1984-04-07",
   "prophetCalled": "2018-01-14",
     "notableQuotes": [
@@ -219,5 +219,18 @@
       "The Lord will always be with His people, and He will always sustain them if they will only be faithful to Him."
     ],
     "imageUrl": "https://www.churchofjesuschrist.org/imgs/c5095c402a6d565be72ac46ffda6615ffe88ec5f/full/640%2C/0/default"
+  },
+  {
+    "name": "Dallin H. Oaks",
+    "born": "1932-08-12",
+    "died": null,
+    "apostleCalled": "1984-04-07",
+    "prophetCalled": "2025-10-14",
+    "notableQuotes": [
+      "You can never get enough of what you don’t need, because what you don’t need won’t satisfy you.",
+      "The gospel of Jesus Christ is the brightest light and the only hope for this darkened world.",
+      "Desires dictate our priorities, priorities shape our choices, and choices determine our actions."
+    ],
+    "imageUrl": "https://www.churchofjesuschrist.org/imgs/db96515429b848527e30220394ba6299c297236a/full/640%2C/0/default.jpg"
   }
 ]
